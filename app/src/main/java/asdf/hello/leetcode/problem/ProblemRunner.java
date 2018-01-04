@@ -15,7 +15,7 @@ public class ProblemRunner {
     }
 
     private void init() {
-        mProblem = new Problem_2();
+        mProblem = new Problem_3();
     }
 
     public static ProblemRunner getInstance() {
