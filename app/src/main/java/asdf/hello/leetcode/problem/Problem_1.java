@@ -47,7 +47,16 @@ public class Problem_1 extends BaseProblem {
     }
 
     public int[] twoSum(int[] nums, int target) {
-        int[] result = {1, 2};
-        return result;
+
+        int nLength = nums.length;
+        for (int i = 0; i < nLength; i++){
+            for (int j = 0; j < nLength; j++){
+                if (nums[i] + nums[j] == target && i != j){
+                    return new int[]{i, j};
+                }
+            }
+        }
+
+        return new int[]{0, 0};
     }
 }
